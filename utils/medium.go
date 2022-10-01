@@ -51,7 +51,7 @@ func CreateMedium() {
 
 	users := make(map[uint]uint, 0)
 
-	file, _ := ioutil.ReadFile("./utils/users.json")
+	file, _ := ioutil.ReadFile("./users.json")
 	json.Unmarshal(file, &users)
 
 	data := make(map[uint]uint, 0)
@@ -87,7 +87,7 @@ func CreateMedium() {
 			log.Fatal(err)
 
 			mediaJson, _ := json.Marshal(data)
-			err = ioutil.WriteFile("./utils/media.json", mediaJson, 0644)
+			err = ioutil.WriteFile("./media.json", mediaJson, 0644)
 
 			log.Println(data)
 			if err != nil {
@@ -98,7 +98,7 @@ func CreateMedium() {
 	}
 
 	mediaJson, _ := json.Marshal(data)
-	err := ioutil.WriteFile("./utils/media.json", mediaJson, 0644)
+	err := ioutil.WriteFile("./media.json", mediaJson, 0644)
 
 	log.Println(data)
 	if err != nil {
