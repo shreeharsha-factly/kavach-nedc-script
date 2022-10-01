@@ -16,4 +16,5 @@ func main() {
 	// utils.GetOrgs()
 	// utils.CreateOrganisation()
 	// utils.CreateOrganisationUser()
+	//utils.MigrateOrgDatatoKeto()
 }
